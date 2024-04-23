@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct UserResponse: Codable{
+    let data: [PersoneResponse]
+}
+
+struct PersoneResponse: Codable {
+    let email: String
+    let firstName: String
+    let lastName: String
+}
